@@ -82,6 +82,9 @@ img.resize{
   color: ##fc9003;
 }
 
+
+article.tabs{margin-right:750px;
+=======
 footer {
   background-color: #220;
   padding: 10px;
@@ -96,4 +99,5 @@ article.tabs {
   margin: 2em auto;
   background-color: green;
   margin-right: 500px;
+
 }
