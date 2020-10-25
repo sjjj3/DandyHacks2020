@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css"> <!-- switched href to actual file-->
   </head>
   <body>
+
     <!-- *change made (9:44): changed id, added mouseactions, added relax* -->
     <div id = "mySidenav" class="sidenav" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
     <a href="index.html">About</a>
@@ -15,10 +16,18 @@
     <!-- *change made (9:44): changed id* -->
     <div id = "main" class="main">
 
+    <div class="sidenav">
+    <a href="index.html">About</a>
+    <a href="chill.html">Chill</a>
+    </div>
+    <div class="main">
+
+
       <h1>Relaxing Youtube Videos</h1>
 
       <img class="resize" src="images/UR-logo.png" alt="The UR logo.">
       <p>Here are some videos to chill to if you're feeling stressed out.</p>
+
       <iframe width="420" height="315"
       src="https://www.youtube.com/watch?v=DbuebKNKQsQ">
       </iframe>
@@ -40,5 +49,11 @@
         }
     }
    </script>
+
+      <iframe src="https://www.youtube.com/embed/DbuebKNKQsQ" width="560" height="315" frameborder="0" allowfullscreen>>
+      </iframe>
+
+    </div>
+
   </body>
 </html>

@@ -30,7 +30,11 @@ html {
 body {
     width: 1200px;                /*Changed width Color compared to base template*/
     margin: 0 auto;
+
     background-color: #faf429;
+
+    background-color: #96fdfd;
+
     padding: 0 20px 20px 20px;
     border: 4px solid black;
 }
@@ -58,7 +62,11 @@ img.resize{
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
+
   width: 100px; /* Set the width of the sidebar */
+
+  width: 160px; /* Set the width of the sidebar */
+
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -66,8 +74,10 @@ img.resize{
   background-color: #00539F; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+
   transition: .5s;
   white-space: nowrap;
+
 }
 
 /* The navigation menu links */
@@ -77,11 +87,14 @@ img.resize{
   font-size: 25px;
   color: #faf429;
   display: block;
+
   transition: 0.3s;
+
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
+
   color: #fc9003;
 }
 
@@ -97,11 +110,14 @@ img.resize{
     transition: margin-left .5s;
     padding: 16px;
     margin-left: 100px;
+
+  color: ##fc9003;
+
 }
 
 
 article.tabs{margin-right:750px;
-=======
+
 footer {
   background-color: #220;
   padding: 10px;
