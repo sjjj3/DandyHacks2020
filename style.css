@@ -28,9 +28,9 @@ html {
     background-color; #00539F;
 }
 body {
-    width: 1200px;                /*Changed width Color compared to base template*/
-    margin: 0 auto;
-    background-color: #96fdfd;
+    width: 1200px auto;      /*(before 10)Changed width Color compared to base template (10:07)Changed it to auto*/
+    margin: 0;
+    background-color: #faf429;
     padding: 0 20px 20px 20px;
     border: 4px solid black;
 }
@@ -58,7 +58,7 @@ img.resize{
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
+  width: 100px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -66,6 +66,8 @@ img.resize{
   background-color: #00539F; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
+  transition: .5s;
+  white-space: nowrap;
 }
 
 /* The navigation menu links */
@@ -75,11 +77,26 @@ img.resize{
   font-size: 25px;
   color: #faf429;
   display: block;
+  transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: ##fc9003;
+  color: #fc9003;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 100px;
 }
 
 
