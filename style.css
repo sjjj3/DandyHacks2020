@@ -31,14 +31,14 @@ html {
 /* Added Background main in HTML and set it to background image. Separated main from bacground Saturday 10PM -Kevin*/
 .background{
     position: fixed;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-image: url("images/RushRhees.jpg"); /*Saturday 9:48PM -Kevin */
+    background-image: url("images/RushRheesResize.jpg"); /*Saturday 9:48PM -Kevin */
     background-repeat: no-repeat;
     background-position: 100%;
     background-color: #96fdfd;
-    filter: blur(8px);  /* added blur*/
-    -webkit-filter: blur(8px);
+    /*filter: blur(8px);  /* added blur*/
+    /*-webkit-filter: blur(8px);*/
     z-index: -2;
 }
 .sidenav {
@@ -74,10 +74,7 @@ img {
     display: block;
     margin: 0 auto;
 }
-img.resize{
-    max-width:50%;
-    max-height:50%;
-}
+
 
 /* The sidebar menu */
 .sidenav {
