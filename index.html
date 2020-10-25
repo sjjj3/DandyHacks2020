@@ -6,28 +6,76 @@
     <link rel="stylesheet" href="style.css"> <!-- switched href to actual file-->
   </head>
   <body>
+
+     <div class="background">
+	 <p> hi </p>
+	 <div class="blur"></div>
+       </div>
         <!-- Side navigation -->
     <div class="sidenav">
+
+        <!-- Side navigation  *change made (9:44): changed id, added relax, and added mouse actions* -->
+    <div id = "mySidenav" class="sidenav" onmouseover="toggleSidebar()" onmouseout="toggleSidebar()">
+
     <a href="index.html">About</a>
     <a href="chill.html">Chill</a>
+    <a href="relax.html">Relax</a>
     </div>
-    <div class="main">
+
+       <div class="main">
+          <h1>Mental Health at U of R</h1>
+         <img class="resize" src="images/UR-logo.png" alt="The UR logo.">
+         <h2>For support:</h2>
+
+         <p>This website is mainly for giving people more information about where to go if they need help. </p>
+			<p> If you are in need of immediate help please call.
+			<a href="https://suicidepreventionlifeline.org/">1-800-273-8255</a>
+         <a href="http://www.rochester.edu/uhs/ucc/">If you need to contact someone go to this link.</a>
+         <p style="color:blue;">If you are worried about a friend please contact the CARE network.</p>
+         <a href="https://www.rochester.edu/care/">If you are worried about a friend.</a>
+
+    <!-- *change made (9:44): changed id* -->
+    <div id = "main" class="main">
        <h1>Mental Health at U of R</h1>
       <img class="resize" src="images/UR-logo.png" alt="The UR logo.">
       <h2>For support:</h2>
 
       <p>This website is mainly for giving people more information about where to go if they need help. </p>
-			<p> If you are in need of immediate help please call.
+			<p> If you are in need of immediate help please call
 			<a href="https://suicidepreventionlifeline.org/">1-800-273-8255</a>
-      <a href="http://www.rochester.edu/uhs/ucc/">If you need to contact someone go to this link.</a>
+      <a href="http://www.rochester.edu/uhs/ucc/">If you need to contact someone go to this link</a>
       <p style="color:blue;">If you are worried about a friend please contact the CARE network.</p>
-      <a href="https://www.rochester.edu/care/">If you are worried about a friend.</a>
+      <a href="https://www.rochester.edu/care/">If you are worried about a friend </a>
+
 
 			<footer>
 			  <h2>UR NOT ALONE</h2>
 			</footer>
 
 
+
+       </div>
+      
+
     </div>
+
+    <!-- *change made (9:44): added javascript* -->
+    <script>
+    var mini = true;
+
+    function toggleSidebar() {
+        if (mini) {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            this.mini = false;
+        } else {
+            //change from 85 --> 100 (9:50)
+            document.getElementById("mySidenav").style.width = "100px";
+            document.getElementById("main").style.marginLeft = "100px";
+            this.mini = true;
+        }
+    }
+   </script>
+
   </body>
 </html>
